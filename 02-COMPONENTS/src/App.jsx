@@ -94,6 +94,43 @@ One-Line Interview Answer
 
 */
 
+/*
+Real DOM  → actual webpage in the browser 
+Virtual DOM → lightweight JS representation of it //React creates a JavaScript copy of this structure in memory.
+
+
+Updating the Real DOM is slow.
+
+If we updated the DOM directly for every small change, the page could become very slow.
+
+✅ With React Virtual DOM:
+
+1. Create a new Virtual DOM
+2. Compare it with the previous one
+3. Find exactly what changed
+4. Update ONLY that element in the real DOM
+
+This comparison process is called Diffing.
+
+Old Virtual DOM
+        ↓
+New Virtual DOM
+        ↓
+Find difference
+        ↓
+Update only the changed part in Real DOM
+
+React does NOT update the DOM directly when state changes.
+
+State change
+   ↓
+New Virtual DOM
+   ↓
+Diffing
+   ↓
+Minimal Real DOM update
+*/
+
 const App = () => {
   const user = "Abhishek"
   return (

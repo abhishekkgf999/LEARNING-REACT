@@ -19,6 +19,34 @@ import React, {useState} from 'react'
      → onChange handler
 */
 
+/*
+2️⃣ The "Why": What problem does it solve?
+
+Imagine a form input field.
+
+Without two-way binding:
+
+-> User types something
+
+-> But your program doesn't know the value
+
+You would need to manually fetch the value from the DOM.
+
+Example in vanilla JS:
+
+document.querySelector("input").value
+
+React avoids this by connecting the input directly to state.
+
+So whenever the user types:
+
+User types
+     ↓
+State updates
+     ↓
+UI stays in sync
+*/
+
 /* -----------------------------------------------------
    🔹 BASIC TWO-WAY BINDING EXAMPLE
    ----------------------------------------------------- */
